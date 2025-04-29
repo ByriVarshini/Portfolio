@@ -1,0 +1,266 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+  }
+  
+  /* Profile Picture */
+  .hero .profile-pic {
+    width: 460px; /* Increased size */
+    height: 460px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    margin-left: -120px; /* Moved more to the left */
+    flex-shrink: 0;
+  }
+  
+  /* Content Block */
+  .hero .content {
+    flex: 1;
+    max-width: 650px;
+    text-align: left;
+    padding-left: 120px; /* Pushed content more to the right */
+  }
+  
+  .hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 span {
+    color: #007bff;
+  }
+  
+  .hero .lead {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin-bottom: 30px;
+  }
+  
+  .social-icons a {
+    font-size: 1.8rem;
+    color: #333;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .btn-cv {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff !important;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-cv:hover {
+    background-color: #0056b3 !important;
+  }
+  
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .hero .profile-pic {
+      margin-left: 0;
+      margin-bottom: 30px;
+      width: 280px;
+      height: 280px;
+    }
+  
+    .hero .content {
+      max-width: 100%;
+      padding-left: 0;
+    }
+  }
+  
+  /* Contact Section */
+.contact {
+  padding:10px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.8rem;
+  margin-bottom: 5px;
+}
+
+.contact h2 span {
+  color: #007bff;
+}
+
+.contact-lead {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Responsive Contact Section */
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+/* Skills Section */
+.skills {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+}
+
+.skills-category {
+  margin-bottom: 40px;
+}
+
+.skills-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skills .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  font-size: 3rem;
+}
+
+.skills .icons i,
+.skills .icons img {
+  color: #333;
+  transition: transform 0.3s;
+  height: 50px;
+}
+
+.skills .icons i:hover,
+.skills .icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Custom FastAPI Icon Styling */
+.skills .custom-icon {
+  width: 50px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills h2 {
+    font-size: 2rem;
+  }
+
+  .skills .icons {
+    font-size: 2.5rem;
+    gap: 20px;
+  }
+
+  .skills-category h3 {
+    font-size: 1.3rem;
+  }
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  color: #333;
+}
+
+.icon-item span {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+.icon-item i,
+.icon-item img {
+  transition: transform 0.3s;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-item:hover i,
+.icon-item:hover img {
+  transform: scale(1.2);
+}
