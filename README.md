@@ -1,4 +1,4 @@
-# Portfolio# My Portfolio
+# Portfolio  My Portfolio
 
 This repository contains my personal portfolio website.  
 It highlights my education, skills, projects, and achievements.  
@@ -16,9 +16,9 @@ It highlights my education, skills, projects, and achievements.
 
 
 ## Live Portfolio
-[Click here to view my portfolio](https://byrivarshini.github.io/Portfolio/)
+[View here](https://byrivarshini.github.io/Portfolio/)
 
 ## Contact
 - LinkedIn: [Varshini Reddy Byri](https://linkedin.com/in/varshini-reddy-byri-82289b256)  
 - GitHub: [byrivarshini](https://github.com/ByriVarshini)  
-- Email: byrivarshini2004@gmail.com
+- Email: byrivarshini@gmail.com
