@@ -12,7 +12,7 @@ It highlights my education, skills, projects, and achievements.
 - Languages: Python, Java, C, JavaScript, PHP  
 - Frameworks: Django, FastAPI, Bootstrap  
 - Databases: MySQL, PostgreSQL  
-- Tools: Git, GitHub, AWS  
+- Tools: Git, GitHub, Vscode
 
 
 ## Live Portfolio
