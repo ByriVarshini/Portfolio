@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varshini Byri | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <style>
+    .navbar {
+      background-color:lavender !important;
+      border-radius: 10px;
+      padding: 1rem 0;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.20rem;
+      font-weight: 500;
+      padding: 0.75rem 1rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #007bff;
+    }
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%; 
+        border-radius: 15px;
+        overflow: hidden; 
+      }
+    
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+    
+      .card-body {
+        padding: 1.5rem; 
+        min-height: 250px; 
+      }
+    
+      .card-img-top {
+        height: 180px; 
+        object-fit: cover; 
+        border-bottom: 1px solid #ddd; 
+      }
+    
+      .btn-primary {
+        background-color: #6c63ff;
+        border: none;
+        padding: 0.5rem 1.5rem; 
+        font-size: 1rem; 
+        border-radius: 30px; 
+      }
+    
+      .btn-primary:hover {
+        background-color: #574bff;
+      }
+    
+      .row.g-4 {
+        margin-top: 2rem; 
+      }
+    
+      h2.mb-4.text-center {
+        margin-bottom: 2rem; 
+        font-size: 2rem; 
+      }
+    
+    .row.text-center {
+      gap: 2rem; 
+    }
+    body {  
+      font-family: Arial, sans-serif;  
+      background-color: #f4f4f4;  
+      margin: 0;  
+      padding: 0;  
+  }  
+  
+  .projects-section {
+    justify-content: center; 
+    align-items: center;      
+    width: 100%;
+    min-height: 100vh;      
+    padding: 50px 0;
+    background-color: white; 
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 90%;
+    max-width: 1200px;
+    height: 440px;
+    padding: 20px 0;
+    margin: 0 auto;          
+    -ms-overflow-style: none; 
+    scrollbar-width: none;   
+  }
+  
+  .project-container::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .project-card {
+    flex: 0 0 auto;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: 420px;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 15px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-title {
+    color: #1f2937;
+    font-family: "Sora", sans-serif;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .project-description {
+    color: #6b7280;
+    font-family: "Sora", sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  
+  .github-button {
+    background: linear-gradient(135deg, blue);
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+    display: inline-block; 
+  }
+  
+
+
+    </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Varshini Byri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#hero">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <img src="me.jpg" alt="Varshini's Profile" class="profile-pic">
+    <div class="content">
+      <h1>I'm <span>Varshini Byri</span></h1>
+      <p class="lead">Computer Science Undergraduate Student | Aspiring software engineer with a strong passion for technology and problem-solving.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/varshini-reddy-byri-82289b256/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/ByriVarshini" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="mailto:byrivarshini@gmail.com"><i class="bi bi-envelope"></i></a>
+        <li class="d-inline-block">
+          <a href="https://leetcode.com/u/Varshini_byri/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.37 1.37 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.3 5.3 0 0 0-1.209 2.104a5 5 0 0 0-.125.513a5.5 5.5 0 0 0 .062 2.362a6 6 0 0 0 .349 1.017a5.9 5.9 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.38 1.38 0 0 0-1.951-.003l-2.396 2.392a3.02 3.02 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.7 2.7 0 0 1 .066-.523a2.55 2.55 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          </a>
+        </li>
+        <li class="d-inline-block">
+          <a href="https://www.credly.com/users/byri-varshini/" target="_blank" class="text-white">
+            <img src="https://images.credly.com/size/680x680/images/5e00cd56-d6cc-4cbb-8898-c88c9a1e1eab/image.png" alt="Credly Badge" width="50" height="50">
+          </a>
+        </li>
+      </div>
+      <a href="https://drive.google.com/file/d/1z4-KneL8aOHWzeFlpokMp7Gtlj381XUN/view?usp=sharing" class="btn btn-cv" download>Download CV</a>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Education</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm border-0 p-4" style="background-color: lavender; min-height: 250px;">
+            <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold;">B.Tech</h5>
+            <p class="card-text" style="font-size: 1.2rem;">SR University - Warangal<br>2022 - Present</p>
+            <p class="text-muted" style="font-size: 1.1rem;">CPI: 9.53</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm border-0 p-4" style="background-color: lavender; min-height: 250px;">
+            <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold;">Intermediate</h5>
+            <p class="card-text" style="font-size: 1.2rem;">SR Jr College<br>2022</p>
+            <p class="text-muted" style="font-size: 1.1rem;">Percentage: 98.2%</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm border-0 p-4" style="background-color: lavender; min-height: 250px;">
+            <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold;">SSC</h5>
+            <p class="card-text" style="font-size: 1.2rem;">St.Mary's High School<br>2020</p>
+            <p class="text-muted" style="font-size: 1.1rem;">GPA: 10.0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+  
+      <!-- Programming Languages -->
+<div class="skills-category">
+  <h3>Programming Languages</h3>
+  <div class="icons">
+    <div class="icon-item"><i class="devicon-c-plain"></i><span>C</span></div>
+    <div class="icon-item"><i class="devicon-java-plain"></i><span>Java</span></div>
+    <div class="icon-item"><i class="devicon-python-plain"></i><span>Python</span></div>
+    <div class="icon-item"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+    <div class="icon-item"><i class="devicon-css3-plain"></i><span>CSS</span></div>
+    <div class="icon-item"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+  </div>
+</div>
+
+<!-- Frameworks -->
+<div class="skills-category">
+  <h3>Frameworks</h3>
+  <div class="icons">
+    <div class="icon-item"><i class="devicon-bootstrap-plain"></i><span>Bootstrap</span></div>
+    <div class="icon-item"><i class="devicon-django-plain"></i><span>Django</span></div>
+    <div class="icon-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" class="custom-icon" />
+      <span>FastAPI</span>
+    </div>
+  </div>
+</div>
+
+<!-- Databases -->
+<div class="skills-category">
+  <h3>Databases</h3>
+  <div class="icons">
+    <div class="icon-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+    <div class="icon-item"><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <h2 class="mb-4 text-center"> Projects</h2>
+    <div class="project-container">
+      <!-- FUnBlog FASTAPI Project -->
+      <div class="project-card">
+        <img src="funblog.png" alt="Hridayam" class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">Funblog</h3>
+          <p class="project-description">FunBlog is a user-friendly blogging platform built with a modern tech stack, allows users to register, write, edit, and publish blog posts while exploring posts shared by others.</p>
+          <a href="https://github.com/ByriVarshini/Funblog" class="github-button" >View Project</a>
+        </div>
+      </div>
+  
+      <!-- SmartQR Builder Project -->
+      <div class="project-card">
+        <img src="qrcode.jpeg" alt="Money Tracking System " class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">Smart QR Builder</h3>
+          <p class="project-description">SmartQRBuilder is a Python-based application that allows users to generate QR codes either through a web interface powered by Streamlit or via a standalone desktop GUI.</p>
+          <a href="https://github.com/ByriVarshini/SmartQRBuilder" class="github-button" >View Project</a>
+        </div>
+      </div>
+
+      <!-- MakemyTrip  Project -->
+      <div class="project-card">
+        <img src="makemytrip.jpg" alt="Book Recommendation Project" class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">MakeMyTrip</h3>
+          <p class="project-description">Simple Trip Management System is a Python-based application that allows users to plan, manage, and view their trips.</p>
+          <a href="https://github.com/ByriVarshini/MakeMyTrip" class="github-button" >View Project</a>
+        </div>
+      </div>
+  
+      <!-- My Task flow Project -->
+      <div class="project-card">
+        <img src="todo.jpg" alt="CodePen Projects" class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">MyTaskFlow</h3>
+          <p class="project-description">MyTaskFlow is a simple and efficient to-do list application built using Django. It helps users organize, manage, and track their daily tasks seamlessly built using Django.</p>
+          <a href="https://github.com/ByriVarshini/MyTaskFlow" class="github-button" >View Project</a>
+        </div>
+      </div>
+
+      <!-- Netflux Stock  Price Prediction Project -->
+      <div class="project-card">
+        <img src="netflix.webp" alt="Housing Project" class="project-image">
+        <div class="project-info">
+          <h3 class="project-title">Netflix Stock Prediction</h3>
+          <p class="project-description">The primary goalof this project is to analyze trends and patterns in the data and build a predictive model that can forecast short-term stock prices of Netflix with reasonable accuracy.</p>
+          <a href="https://github.com/ByriVarshini/Netflix_StockPrice_Prediction" class="github-button">View Project</a>
+        </div>
+      </div>
+      
+  </section>
+  <!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2><span> Contact Me</span></h2>
+    <p class="contact-lead">Feel free to reach out through this form or connect with me on social media.</p>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-cv">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
